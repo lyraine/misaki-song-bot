@@ -1,6 +1,5 @@
-// Loading dependencies
 const Discord = require("discord.js");
-// Create a new bot object
+
 const myBot = new Discord.Client();
 
 const token = 'NTkwNzk0MTU2MjkzNjE5NzEy.XQnbYg.PhStBTZq2BJPbRen031BXjtz_PQ';
@@ -69,4 +68,4 @@ myBot.on('message', function (message) {
 });
 
 
-myBot.login(token);
+myBot.login(process.env.BOT_TOKEN);
